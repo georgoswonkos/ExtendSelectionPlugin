@@ -1,0 +1,3 @@
+:
+Extend Selection Plugin:1.0.0
+:

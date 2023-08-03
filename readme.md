@@ -2,7 +2,7 @@
 
 ## Description
 
-ExtendSelection is a Plugin for the Keepass password manager. By default when you double click on a word in the notes section at the bottom of the main window Keepass will select this word with the selection marker. However it will end the selection as soon as it reaches a special character. So it is impossible to select e.g. a whole  email address with a double click. To add insult to injury it will also select a trailing white space. This is the built-in behavior of the RichTextBox from c#. 
+ExtendSelection is a Plugin for the Keepass password manager. By default when you double click on a word in the notes section at the bottom of the main window Keepass will select this word with the selection marker. However it will end the selection as soon as it reaches a special character. So it is impossible to select e.g. a whole  email address with a double click. To add insult to injury it will also select a trailing white space. This is the built-in behavior of the RichTextBox from C#. 
 
 This plugin changes the behavior. When the user double clicks a word in the notes section of the main window the selection is expanded on the left and on the right side until a white space or an end-of-line character is reached. The white space is not included in the selection.
 
@@ -22,10 +22,13 @@ This plugin changes the behavior. When the user double clicks a word in the note
 Double click any word you like in the notes section and see the selection expand.
 
 ## Example
-- Before
-<p align="center"><img src="https://github.com/georgoswonkos/ExtendSelectionPlugin/blob/main/exampleBefore.png"/></p>
-- After
-<p align="center"><img src="https://github.com/georgoswonkos/ExtendSelectionPlugin/blob/main/exampleAfter.png"/></p>
+- Without plugin:
+
+![exampleBefore](https://github.com/georgoswonkos/ExtendSelectionPlugin/assets/48263470/ffaefcad-0069-4eed-8ea5-d92fdf789bae)
+
+- With plugin:
+
+![exampleAfter](https://github.com/georgoswonkos/ExtendSelectionPlugin/assets/48263470/cdf9ac93-c6e1-45dd-af73-e7e3f1ad5073)
 
 ## Repository
 

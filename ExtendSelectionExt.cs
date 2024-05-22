@@ -118,7 +118,7 @@ namespace ExtendSelection
         //Keepass update check
         public override string UpdateUrl
         {
-            get { return "https://github.com/georgoswonkos/ExtendSelectionPlugin/main/version.txt"; }
+            get { return "https://raw.githubusercontent.com/georgoswonkos/ExtendSelectionPlugin/main/version.txt"; }
         }
     }
 }

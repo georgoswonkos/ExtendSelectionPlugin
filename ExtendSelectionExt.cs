@@ -85,14 +85,21 @@ namespace ExtendSelection
                     mainCustomRichTextBox.SelectionLength++;
 				}
 
-				// Delete trailing white space
-				if (mainCustomRichTextBox.Text.Substring(posStart + mainCustomRichTextBox.SelectionLength - 1, 1) == " ")
+				// Delete trailing white spaces
+				while(true)
 				{
-                    mainCustomRichTextBox.SelectionLength--;
-				}
+                    if (mainCustomRichTextBox.Text.Substring(posStart + mainCustomRichTextBox.SelectionLength - 1, 1) == " ")
+                    {
+                        mainCustomRichTextBox.SelectionLength--;
+                    }
+					else
+					{
+						break;
+					}
+                }
 
-				// Expand right side of selection
-				while (posStart + mainCustomRichTextBox.SelectionLength < mainCustomRichTextBox.Text.Length)
+                // Expand right side of selection
+                while (posStart + mainCustomRichTextBox.SelectionLength < mainCustomRichTextBox.Text.Length)
 				{
 					string nextChar = mainCustomRichTextBox.Text.Substring(posStart + mainCustomRichTextBox.SelectionLength, 1);
 					if (nextChar == " " | nextChar == "\n" | nextChar == "\r")
